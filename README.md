@@ -1,34 +1,15 @@
 ## Final Project: Script 1
 ### Web-scraping Weather Forecast Information with Python
-In this lab, you will work with a script that scrapes the 5-day weather forecast from the National Weather Service website. The script extracts information from multiple elements listed under the same class name using the BeautifulSoup library. 
+The goal of this first script was to scrape the 5-day weather forecast from the National Weather Service website. It extracts information listed in one class using BeautifulSoup, a common library for webscraping. It takes a user input latitude and longitude value to create a URL. From this URL, it prints an output of a well formatted five day forecast. 
 
-- Download the `NWS_WeatherForecast.py` file and run it in your local IDE or open it, then copy/paste it into a code cell in a new Colab notebook.
-
-- Read the description and comments in the script to understand the purpose of the script
-
-- Run the script. You will see some packages being installed when you run it for the first time.
-
-- The script returns the 5-day forecast for Worcester, MA (Lat: 42.2634, Lon: -71.8022) with the latitude and longitude information provided. Using the latitude and longitude values, it generates the following URL through string concatenation: https://forecast.weather.gov/MapClick.php?lat=42.2634&lon=-71.8022
-
-- Open this URL in a Firefox or Chrome browser. Locate the information that is being outputted in our script. Right click on this and select the Inspect Element option. This will launch the Inspector window that helps locate different elements on the page.
-
-- Notice that all forecast containers in this section are located in the _forecast-tombstone_ class inside the _li_ tag. In order to scrape multiple elements listed under the same class name, we utilize the _findAll()_ function from BeautifulSoup. The tag and class names are required arguments for this function.
-
-### Edit the NWS_ WeatherForecast.py script to add the following functionality:
-1. Take latitude and longitude values as inputs in decimal degrees from user
-
-2.	Convert the latitude and longitude values to strings to generate the URL for the selected location. Pass this URL as an argument in the _get()_ request.
-
-3.	The returned forecast information did not preserve its spacing during the scraping process. Using the _replace()_ function, fix any spacing issues with the output
-
-4.	Convert the final output to uppercase
-
-Remember to update the Script1.py file to include comments and documentation in your script to tell me what it’s doing!
+In previous research, specifically with the HERO program, I had to extract weather data as part of my researching on tree cooling. While this was all done manually, being able to use a python code like this is something I could see using. Taking a series of lat/long values from an excel sheet to generate if not a full five day forecast, but weather conditions that are required variables to simulate different heating or cooling urban models. Additionally, because this script takes multiple elements from one class, it is a code that will be helpful in future cases to extract more than one piece of information from each class. 
 
 ## Final Project: Script 2
 ### Your Chosen Assignment
 For this script, you will complete the assignment that you have proposed, which involves creating a new script, completing an online tutorial, or modifying a previous exercise or lab. You'll need to save that file or notebook into this repo: be sure to include comments and documentation in your script to tell me what it’s doing!
 
-## Final Project: Documentation
-### Changing this README
+Script 2: clearly explain what you are trying to do! While your comment code will help someone reviewing the code understand what it does, youre write-up should expand on these an offer more detail about the overall goal of the script. Additionally, you should describe the process of writing the script: was it easy, hard, what challenges or errors did you face and how did you resolve them? If you use any resources to help write your code (e.g. Stackoverflow.com; the text book; etc.), please link to them in the body of your text. E.g. “After repeated syntax errors, I checked Stackoverflow.com to find that…” Use Markdown to format your text and link to a specific online resources that you used.
+
+
+## Final Project: Debugging
 Your write-up will be here, on this README page. You will need to edit this page with your new text: you do **not** need to keep these instructions on your README! 
