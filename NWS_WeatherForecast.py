@@ -49,13 +49,13 @@ weather_forecast = soup.findAll("li", {"class": "forecast-tombstone"})
 # Loop through the BeautifulSoup object to extract text text from every class instance using .text
 # Store results in a list
 for i in weather_forecast:
-    i = i.text
-    forecast.append(i)
+    i = i.text #gets the text for each class 
+    forecast.append(i) #appends each class to the forecast list 
 
 # Print list to remove unicode characters
 for day in forecast:
-    day = day.replace('A',' A')
-    day = day.replace('L',', L')
-    day = day.replace('H',', H')
-    day = day.replace('N',' N')
-    print(day.upper())
+    day = day.replace('A',' A') #puts a space between words
+    day = day.replace('L',', L') #puts a space between words
+    day = day.replace('H',', H') #puts a space between words
+    day = day.replace('N',' N') #puts a space between words
+    print(day.upper()) #prints all text in capital letters
